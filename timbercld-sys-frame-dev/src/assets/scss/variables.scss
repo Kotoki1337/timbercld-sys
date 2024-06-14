@@ -1,0 +1,42 @@
+/**
+ * Copyright (C) 2022-2023 Timber Chain Cloud (TimberCLD). All Rights Reserved.
+ *
+ * @author Jianglong
+ * @email jianglong@timbercld.com
+ * @site https://www.timbercld.com/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Base
+$base--line-height: 1.15;
+
+// Navbar
+$navbar--height: 40px;
+
+// Sidebar
+$sidebar--width: 200px;
+$sidebar--width-fold: 64px;
+$sidebar--background-color-dark: #263238;
+$sidebar--text-color-dark: #8a979e;
+$sidebar--menu-item-height: 48px;
+
+// Content
+$content--padding: 15px;
+$content--background-color: #F2F3F5;
+$content--card-header-height: 60px;
+$content--tabs-header-height: 38px;
+// Content, 填充整屏高度(非tabs状态) = 整屏高度 - 导航条高度 - tccui-content上下内边距高度
+$content--fill-height: calc(100vh - #{$navbar--height} - #{$content--padding * 2});
+// Content, 填充整屏高度(是tabs状态) = 整屏高度 - 导航条高度 - tabs组件header高度 - tabs组件content上下内边距高度
+$content--fill-height-tabs: calc(100vh - #{$navbar--height} - #{$content--tabs-header-height} - #{$content--padding * 2});
